@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/Fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/Fonts/Poppins-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.header {
+  height: 70px;
+  width: 100%;
+  box-shadow: 3px 10px 13px -3px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 3px 10px 13px -3px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 3px 10px 13px -3px rgba(0, 0, 0, 0.76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.text-header {
+  font-family: Poppins;
+  font-size: 30px;
+}

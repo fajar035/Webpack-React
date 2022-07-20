@@ -1,0 +1,94 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  width: 370px;
+  height: 500px;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.text-title {
+  font-family: Poppins;
+  font-size: 30px;
+  text-align: center;
+}
+
+.text-data {
+  text-align: center;
+  margin: 20px 0;
+  text-align: justify;
+  font-family: Nunito;
+}
+.btn-detail {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+.btn-detail:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(77, 72, 71, 0.5);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.btn-detail span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  font-family: Nunito;
+}
+.btn-detail svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.btn-detail:hover:before {
+  width: 100%;
+  background: rgba(110, 105, 104, 0.5);
+}
+.btn-detail:hover svg {
+  transform: translateX(0);
+}
+.btn-detail:active {
+  transform: scale(0.96);
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card {
+    width: 90%;
+    height: 300px;
+  }
+}
